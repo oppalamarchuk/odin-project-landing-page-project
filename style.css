@@ -1,0 +1,168 @@
+:root {
+    --main-bg-color: #264653;
+}
+*{
+    color: #E9ECEF;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background-color: #213b47;
+    margin: 0;
+    padding:1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+
+ul{
+    margin: 0;
+    display: flex;
+    gap: 24px;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: orange;
+}
+img{
+    max-width: 100%;
+}
+h1{
+ font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+.section{
+    padding: 2rem;
+}
+
+/* hero section */
+.main{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:16px;
+    padding-top: 70px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main img{
+    height: auto;
+    width: 50%;
+    max-width: 200%;
+}
+.main p ,
+.main h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* section cards*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards .text{
+    color: var(--main-bg-color);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+    max-width: 200%;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    max-height: 100%;
+
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid blue;
+}
+
+/*quote-section*/
+.quote-section{
+    background-color: #b0b5b5;
+    min-height: 200px;
+}
+.quote-info{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.quote-author{
+    margin-top: 0;
+    text-align: right;
+}
+
+/* sign up section*/
+.big-alya-btn{
+    background-color: var(--main-bg-color);
+    border-radius: 16px;
+    margin: 16px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign-up-btn{
+    font-size: 16px;
+    background-color: var(--main-bg-color);
+    border-radius: 16px;
+    padding: 8px;
+    margin: 16px;
+    border-color: #c8cdcd;
+}
+.sign-up-btn:hover{
+    color: #ffa500;
+}
+.sign-up-text{
+    padding: 24px;
+}
+.sign-up-text p{
+    margin-top: 0;
+}
+.sign-up-text h2{
+    margin-bottom:  0;
+}
+
+/*footer*/
+footer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+}
